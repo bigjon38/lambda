@@ -10,9 +10,7 @@ Malicious or suspicious requests are blocked before Lambda
 Students see real security controls in action
 Logs + behavior reinforce “edge-first security”
 
-🧠 Concept First (Say This Before Clicking)
-
-“Right now your API trusts everyone. WAF is your first line of defense.”
+🧠 Concept First: “Right now your API trusts everyone. WAF is your first line of defense.”
 
 🔁 Updated Request Flow: Client → WAF → API Gateway → Lambda → Logs
 👉 Critical insight: If WAF blocks → API Gateway and Lambda are NEVER reached
