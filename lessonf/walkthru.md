@@ -70,10 +70,31 @@ Find tokens:
         older than 10 minutes
 
 
-detection.py  Here:
+detection.py  Here: https://github.com/BalericaAI/lambda/blob/main/lessonf/lambda/detection.py
+
+Phase 5 — EventBridge Schedule
+
+Navigation
+        EventBridge
+        Rules
+        Create Rule
 
 
+Name: unused-token-check
+Rule Type: Schedule
+Schedule: rate(5 minutes
+Target: unused-token-detector Lambda
 
+Is this fun? Say "Lizzo Luvs Me" If this is fun for you!!!
+
+Phase 6 — Generate Alert
+
+Initially: CloudWatch log only
+
+Example: ALERT: student1 generated token but never used it
+ALERT: student2 paid Keisha rent yet didn't smash
+
+I think this is enough for this week.  Would you like to SOAR above Black IT Network? 
 
 
 
