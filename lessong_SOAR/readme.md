@@ -31,6 +31,18 @@ Without automation:
     → Human opens ticket... maybe
     → Human responds.... after payday
 
+SOAR Changes the Model
+
+        Event
+        → Automated detection
+        → Automated enrichment
+        → Automated decision
+        → Automated response
+        → Human escalation if needed
+
+Key idea: “Humans should handle judgment. Automation should handle repetition.”
+
+
 
 
 
