@@ -1,3 +1,7 @@
+# IMPORTANT unless you want Lizzo hell
+# App Client MUST NOT have a client secret enabled
+
+
 import boto3
 import getpass
 import json
