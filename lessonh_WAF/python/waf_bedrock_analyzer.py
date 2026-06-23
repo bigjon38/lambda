@@ -120,8 +120,9 @@ def save_to_dynamodb(waf_summary):
             "action": waf_summary.get("action"),
             "rule": waf_summary.get("terminating_rule_id")
         }
-    print("Successfully saved event to DynamoDB")
     )
+
+ print("Successfully saved event to DynamoDB")
     
 def lambda_handler(event, context):
     print("Starting WAF Bedrock analyzer")
