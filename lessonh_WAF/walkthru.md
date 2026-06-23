@@ -51,9 +51,39 @@ WAF_LOG_GROUP=/aws/waf/chewbacca-waf
 BEDROCK_MODEL_ID=anthropic.claude-3-haiku-20240307-v1:0
 LOOKBACK_MINUTES=10
 
-Make this: Python Lambda: waf_bedrock_analyzer.py
+WAF Lambda---> Make this: Python Lambda: waf_bedrock_analyzer.py
+HERE--->>>> https://github.com/BalericaAI/lambda/blob/main/lessonh_WAF/python/waf_bedrock_analyzer.py
+
+Test flow
+1. Generate a WAF event: Use the API endpoint and send something suspicious:
+
+        curl "https://<api-id>.execute-api.<region>.amazonaws.com/prod/python?name=<script>alert(1)</script>"
+
+Expected result: 403 Forbidden
+
+2. Invoke the analyzer Lambda --> Run it manually first from Lambda Console:
+3. Check analyzer logs ---> Go to: CloudWatch Logs → /aws/lambda/waf-bedrock-analyzer
+
+Expected output:
+
+        Structured WAF Event:
+        {
+          "action": "BLOCK",
+          "client_ip": "...",
+          "uri": "/prod/python",
+          "terminating_rule_id": "..."
+        }
+        
+        ===== BEDROCK SOC SUMMARY =====
+        Severity:
+        Possible Attack Type:
+        Why This Was Flagged:
+        Recommended Analyst Actions:
+        Short Executive Summary:
 
 
-https://github.com/BalericaAI/lambda/blob/main/lessonh_WAF/python/waf_bedrock_analyzer.py
+
+
+
 
 
