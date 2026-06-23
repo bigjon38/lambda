@@ -105,8 +105,6 @@ Keep the answer concise and practical.
     response_body = json.loads(response["body"].read())
     return response_body["content"][0]["text"]
 
-import uuid
-
 # For the second part of the lab
 
 def save_to_dynamodb(waf_summary):
