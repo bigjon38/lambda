@@ -7,12 +7,12 @@ Let's work on WAF.
 2. A Lambda reads the last few minutes of WAF log events.
 3. Lambda extracts:
 
-    source IP
-    country
-    URI
-    HTTP method
-    WAF action
-    terminating rule
+        source IP
+        country
+        URI
+        HTTP method
+        WAF action
+        terminating rule
     
 4. Lambda sends those details to Bedrock.
 5. Bedrock returns a SOC-style summary.
