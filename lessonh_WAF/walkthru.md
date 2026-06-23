@@ -157,6 +157,30 @@ Lambda Enhancement
 Currently: print(ai_summary)
 Now: table.put_item(...)
 
+Add DynamoDB Client
+
+                dynamodb = boto3.resource("dynamodb")          
+                table = dynamodb.Table("waf-events")
+
+Store Event
+
+Inside processing loop:
+
+                import uuid
+                
+                table.put_item(
+                    Item={
+                        "event_id": str(uuid.uuid4()),
+                        "timestamp": str(waf_summary["timestamp"]),
+                        "source_ip": waf_summary["client_ip"],
+                        "country": waf_summary["country"],
+                        "uri": waf_summary["uri"],
+                        "method": waf_summary["method"],
+                        "action": waf_summary["action"],
+                        "rule": waf_summary["terminating_rule_id"]
+                    }
+                )
+
 
 
 
