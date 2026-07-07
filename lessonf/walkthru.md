@@ -103,5 +103,23 @@ Example:
 I think this is enough for this week.  Would you like to SOAR above Black IT Network? 
 
 
+Terraform NOTE
+
+why isn't there an aws_eventbridge_rule resource?
+
+##############################################################
+#
+# NOTE
+#
+# Terraform still uses the legacy resource names:
+#
+# aws_cloudwatch_event_rule
+#
+# aws_cloudwatch_event_target
+#
+# These resources create Amazon EventBridge rules.
+#
+##############################################################
+
 
 
