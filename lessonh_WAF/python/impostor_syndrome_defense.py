@@ -79,3 +79,56 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+if terraform_apply == "FAILED":
+    print("Good.")
+    print("Now you're about to learn something.")
+
+print("Reading CloudWatch Logs...")
+
+time.sleep(2)
+
+print("Diagnosis:")
+
+print("The problem is not AWS.")
+print("The problem is you.")
+print("...but that's good news because you can fix you.")
+
+print("Checking engineering status...")
+
+time.sleep(2)
+
+print("Impostor Syndrome: DETECTED")
+
+time.sleep(1)
+
+print("Reviewing evidence...\n")
+
+evidence = [
+    "Completed Kubernetes labs.",
+    "Built Terraform deployments.",
+    "Configured IAM policies.",
+    "Implemented Cognito authentication.",
+    "Protected an API with WAF.",
+    "Integrated Amazon Bedrock.",
+    "Debugged Lambda failures.",
+    "Read CloudWatch logs."
+]
+
+for item in evidence:
+    print(f"✔ {item}")
+    time.sleep(0.4)
+
+print("\nConclusion:")
+print("Engineering competence confirmed.")
+print("Impostor Syndrome rejected.")
+
+def ask_ai():
+    print("Consulting AI...")
+    time.sleep(2)
+
+    print("\nAI Response:")
+    print("No.")
+    print("Go read the documentation first.")
+
+
