@@ -60,7 +60,10 @@ resource "aws_iam_policy" "waf_lambda_policy" {
 
         Action = [
 
-          "dynamodb:PutItem"
+        "dynamodb:PutItem",
+        "dynamodb:GetItem",
+        "dynamodb:Query",
+        "dynamodb:Scan"
 
         ]
 
