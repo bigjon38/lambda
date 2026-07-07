@@ -191,7 +191,19 @@ Inside processing loop:
 
 
 
+Notes
 
+For the Lambda function itself, I like to ensure the log group exists first. Otherwise, Lambda may auto-create the log group before Terraform manages it.
+
+
+resource "aws_lambda_function" "waf_bedrock" {
+
+  ...
+
+  depends_on = [
+    aws_cloudwatch_log_group.lambda_logs
+  ]
+}
 
 
 
