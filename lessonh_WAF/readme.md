@@ -262,3 +262,39 @@ That's how engineers learn.
 Good luck.
 
 — Broken Theo from bed.
+
+## A Message from Theo
+
+As many of you know, I'm currently recovering from a hit-and-run accident and have been ordered to stay in bed for a week. My class admins and Chewbacca have both made it very clear that if I try to teach tonight, they'll probably stage another intervention.
+
+So... you're stuck with some Deer from Boston for this lab.
+
+Please give them the same respect and attention that you would give me. They're helping keep the class moving forward while I recover.
+
+Most importantly...
+
+**Think.**
+
+Don't immediately ask AI.
+
+Don't immediately ask Discord.
+
+Don't immediately ask the instructor.
+
+Read the error.
+
+Read CloudWatch.
+
+Read the Terraform.
+
+Read the IAM policy.
+
+The answer is usually there.
+
+This lab is designed to teach you how cloud systems work together.
+
+You've got this.
+
+Now go build something awesome.
+
+— Broken Theo (from bed 🛏️)
