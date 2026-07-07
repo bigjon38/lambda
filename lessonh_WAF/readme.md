@@ -2,7 +2,7 @@
 
 ## Welcome
 
-If you're reading this, then Theo is probably recovering and someone else is leading tonight's lab.
+If you're reading this, then Theo is probably recovering and a deer is leading tonight's lab.
 
 First...
 
